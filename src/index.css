@@ -1,0 +1,534 @@
+@import url("./assets/fonts/pretendardFont/stylesheet.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #020817;
+}
+
+.root {
+  position: relative;
+  overflow: auto;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0.25rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+    --radius: 0.3rem;
+    --genDis: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    :root {
+      --genDis: 0;
+    }
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground text-[14px] font-normal;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-[1870px];
+  }
+
+  .bg-soccer,
+  .bg-football,
+  .bg-basketball,
+  .bg-volleyball,
+  .bg-baseball,
+  .bg-pingPong,
+  .bg-tennis,
+  .bg-billiards,
+  .bg-eGame,
+  .bg-cricket,
+  .bg-badminton,
+  .bg-darts,
+  .bg-iceHockey,
+  .bg-boxing {
+    @apply bg-no-repeat bg-cover bg-center;
+  }
+
+  .bg-soccer {
+    @apply bg-[url('/images/bg-soccer.png')];
+  }
+
+  .bg-football {
+    @apply bg-[url('/images/bg-football.png')];
+  }
+
+  .bg-basketball {
+    @apply bg-[url('/images/bg-basketball.png')];
+  }
+
+  .bg-volleyball {
+    @apply bg-[url('/images/bg-volleyball.png')];
+  }
+
+  .bg-cricket {
+    @apply bg-[url('/images/bg-cricket.png')];
+  }
+
+  .bg-baseball {
+    @apply bg-[url('/images/bg-baseball.png')];
+  }
+
+  .bg-pingPong {
+    @apply bg-[url('/images/bg-pingPong.png')];
+  }
+
+  .bg-tennis {
+    @apply bg-[url('/images/bg-tennis.png')];
+  }
+
+  .bg-billiards {
+    @apply bg-[url('/images/bg-bia.png')];
+  }
+
+  .bg-eGame {
+    @apply bg-[url('/images/bg-game.png')];
+  }
+
+  .bg-badminton {
+    @apply bg-[url('/images/bg-shuttlecock.png')];
+  }
+
+  .bg-darts {
+    @apply bg-[url('/images/bg-archery.png')];
+  }
+
+  .bg-iceHockey {
+    @apply bg-[url('/images/bg-iceHockey.png')];
+  }
+
+  .bg-boxing {
+    @apply bg-[url('/images/bg-boxing.png')];
+  }
+  .text-10 {
+    @apply text-[10px];
+  }
+  .text-12 {
+    @apply text-[12px];
+  }
+  .text-145 {
+    @apply text-[145px];
+  }
+  .text-16 {
+    @apply text-[16px];
+  }
+}
+
+.modal-betting-history .ant-table-wrapper .ant-table {
+  background: transparent;
+}
+
+.modal-betting-history
+  .ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:last-child
+  > *:last-child {
+  border-start-end-radius: 0px;
+}
+
+.modal-betting-history
+  .ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  border-start-start-radius: 0px;
+}
+
+.modal-betting-history .ant-table-thead tr .ant-table-cell {
+  background-color: #3f4c6836;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dark .modal-betting-history .ant-table-thead tr .ant-table-cell {
+  background-color: #3f4c6836;
+  color: white;
+}
+
+.modal-betting-history .ant-table-wrapper .ant-table-thead > tr > th {
+  padding: 12.5px 16px;
+}
+
+.modal-betting-history
+  .ant-table-wrapper
+  .ant-table-tbody
+  > .ant-table-expanded-row
+  > td {
+  /* padding: unset; */
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.modal-betting-history .ant-table-wrapper .ant-table-tbody > tr > td {
+  padding: 12.5px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  /* font-style: italic; */
+  color: white;
+}
+
+.modal-betting-history .ant-table-wrapper .ant-table-tbody > tr > td {
+  /* background-color: #f3f4f6; */
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.modal-betting-history .ant-table-row-level-0 > td {
+  border-top: 10px solid white;
+}
+
+.dark .modal-betting-history .ant-table-row-level-0 > td {
+  border-top: 10px solid #1f2937;
+}
+
+.modal-betting-history .ant-table-row-level-0:first-child > td {
+  border-top: 0px;
+  /* background-color: red; */
+}
+
+.modal-betting-history .ant-table-row-level-0 > td {
+  background-color: #1c2026;
+}
+.dark .modal-betting-history .ant-table-row-level-0 > td {
+  background-color: #111827;
+}
+
+.modal-betting-history .ant-table-expanded-row-level-1 {
+  background-color: #1c2026;
+}
+
+.dark .modal-betting-history .ant-table-expanded-row-level-1 {
+  background-color: #111827;
+}
+
+.modal-betting-history
+  .ant-table-expanded-row-level-1
+  .ant-table-tbody
+  > tr
+  > td {
+  background-color: #1f2937;
+}
+
+.dark
+  .modal-betting-history
+  .ant-table-expanded-row-level-1
+  .ant-table-tbody
+  > tr
+  > td {
+  background-color: #1f2937;
+  border-top: unset;
+}
+
+.modal-betting-history .ant-table-cell td {
+  border-top: none;
+}
+
+.modal-betting-history .ant-table-wrapper table {
+  border-radius: unset;
+  min-width: 750px;
+}
+
+.modal-betting-history .ant-pagination-item-active {
+  background: #60aa63;
+  border-color: #60aa63;
+}
+
+.modal-betting-history .ant-pagination-item-active a {
+  color: white;
+}
+
+.dark .modal-betting-history .ant-pagination-item {
+  background: #374151;
+}
+
+.dark .modal-betting-history .ant-pagination-item-active {
+  background: #60aa63;
+  border-color: #60aa63;
+}
+
+.modal-betting-history .ant-pagination-item a {
+  color: white;
+}
+
+.modalBetting .ant-modal-body {
+  flex: 1;
+}
+
+.modalBetting table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* height: 100%; */
+  width: 100%;
+}
+
+.ant-modal-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-betting-history table {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.modal-betting-history table table {
+  position: static;
+}
+
+.modal-betting-history .ant-spin-container,
+.modal-betting-history .ant-spin-container .ant-table,
+.modal-betting-history .ant-spin-nested-loading,
+.modal-betting-history .ant-table-wrapper,
+.modal-betting-history .ant-spin-container .ant-table-content,
+.modal-betting-history .ant-spin-container,
+.modal-betting-history .ant-spin-container .ant-table-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: auto;
+  border-radius: 0px;
+}
+
+.modal-betting-history .ant-spin-container .ant-table-container {
+  flex: 1;
+}
+
+.ant-popover-inner {
+  background-color: #1b1f24 !important;
+  padding: 16px !important;
+  box-shadow: 2px 4px 8px 0px rgba(96, 170, 99, 0.16) !important;
+}
+
+.ant-popover-arrow::after {
+  background-color: #e5e7eb !important;
+}
+
+.modalBetting .ant-modal-header {
+  background-color: transparent;
+}
+
+.dark .modal-betting-history .ant-tabs-nav::before {
+  border-color: #4b5563;
+}
+
+.dark .modalBetting .ant-modal-close {
+  filter: invert(1);
+}
+
+.dark
+  .modal-betting-history
+  .ant-table-wrapper
+  .ant-table-tbody
+  .ant-table-row-selected {
+  opacity: 0.9;
+  background-color: #374151;
+}
+
+.dark
+  .modal-betting-history
+  .ant-table-wrapper
+  .ant-table-tbody
+  .ant-table-row-selected
+  > td {
+  background-color: #374151;
+}
+
+.modal-betting-history
+  .ant-table-wrapper
+  .ant-table-tbody
+  .ant-table-cell-row-hover {
+  background-color: #1c2026;
+}
+
+.dark
+  .modal-betting-history
+  .ant-table-wrapper
+  .ant-table-tbody
+  .ant-table-cell-row-hover {
+  opacity: 0.7;
+  background-color: #111827;
+}
+
+.dark
+  .sub-table-detail-betting-history
+  .ant-table-wrapper
+  .ant-table-tbody
+  .ant-table-cell-row-hover {
+  opacity: 0.7;
+  background-color: transparent;
+}
+
+.dark .collapseCus .ant-collapse-content-box {
+  background-color: #111827;
+}
+
+.dark .modal_live_container.ant-modal .ant-modal-content {
+  background-color: #111827;
+  color: white;
+}
+
+.modalBetting .ant-pagination-next,
+.modalBetting .ant-pagination-prev,
+.ant-pagination-item-ellipsis {
+  color: white !important;
+}
+
+.modalBetting .ant-table-cell {
+  min-width: 90px;
+}
+
+.modalBetting .ant-table-cell-fix-left {
+  min-width: auto;
+}
+
+@media (max-width: 500px) {
+  .modalBetting .ant-pagination-item,
+  .modalBetting .ant-pagination-next,
+  .modalBetting .ant-pagination-prev {
+    width: 26px;
+    height: 26px;
+    min-width: unset;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .modalBetting .ant-pagination-item {
+    margin-inline-end: 4px;
+  }
+}
+
+.dark .modal_live_container.ant-modal .ant-modal-content .ant-modal-title {
+  background-color: #111827;
+  color: white;
+}
+
+.dark
+  .modal_live_container.ant-modal
+  .ant-modal-content
+  .ant-modal-close-x
+  svg {
+  color: white;
+}
+
+.ant-modal-close {
+  color: white !important;
+}
+
+.ant-modal-close:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.ant-tabs-tab {
+  color: #5d6066 !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #60aa63 !important;
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+  background: #60aa63;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: 1px solid #323437;
+}
+
+@keyframes rotateAni {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

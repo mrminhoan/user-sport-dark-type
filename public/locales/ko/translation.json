@@ -1,0 +1,111 @@
+{
+  "header": {
+    "input-search": {
+      "placeholder": "리그명 또는 팀명 검색...",
+      "btn-search": "검색"
+    },
+    "betting-details": "베팅내역",
+    "user-infor": {
+      "free-match": "프리메치",
+      "minimum-bet-amount": "최소베팅금액",
+      "maximum-bet-amount": "최대베팅금액",
+      "maximun-win-amount": "최대당첨금액",
+      "minimum-folder": "최소폴더",
+      "maximum-folder": "최대폴더",
+      "maximum-dividend": "최대배당",
+      "betting-cannot-cancel-after": "베팅 {{amount}} 분 이후 취소불가",
+      "cancellation-is-not-possible-before-the-game-starts": "게임시작 {{amount}} 분 전 취소불가",
+      "bet": "베팅",
+      "no-cancellation-after-this": "이후 취소불가"
+    }
+  },
+  "bet-slip-infor": {
+    "bet-slips": "베팅전표",
+    "amount-held": "보유금액:",
+    "total-odds": "보유금액:",
+    "expected-win-amount": "예상당첨금액:",
+    "bet-amount": "베팅금액:",
+    "max": "최대",
+    "place-a-bet": "베팅하기",
+    "empty-bet-slips": "선택한 게임이 없습니다",
+    "bonus-dividend": "보너스배당"
+  },
+  "help": "베팅하기",
+  "fixture_zone": {
+    "refresh": "새로 고치다",
+    "all": "모두"
+  },
+  "position": {
+    "1": "홈",
+    "2": "원정",
+    "x": "x",
+    "home": "홈",
+    "away": "원정",
+    "draw": "X",
+    "under": "언더",
+    "over": "오버",
+    "odd": "홀",
+    "even": "짝",
+    "home-win": "홈",
+    "away-lose": "원정"
+  },
+  "notification": {
+    "warning": "경고",
+    "pls-select-the-game": "게임을 선택해 주세요",
+    "pls-enter-your-bet-amount": "베팅금액을 입력해 주세요베팅금액을 입력해 주세요",
+    "maximum-winnings": "최대 당첨금 {{amount}} 까지 가능합니다"
+  },
+  "help-modal": {
+    "help": "돕다",
+    "close": "닫다"
+  },
+  "betting-history": {
+    "a-month-ago": "한달 전",
+    "a-week-ago": "일주일 전",
+    "yesterday": "어제",
+    "today": "오늘",
+    "column-title": {
+      "combination": "조합",
+      "betting-time": "베팅시간",
+      "betting-amount": "베팅금액",
+      "expected-winning-amount": "예상당첨금액",
+      "winning-dividend": "당첨배당",
+      "bonus-dividend": "보너스배당",
+      "total-winning-odds": "총 당첨배당",
+      "winning-amount": "당첨금액",
+      "betting-result": "베팅결과",
+      "processing-time": "처리시간",
+      "action": "행동",
+      "betting-details": "베팅내역",
+      "cancel-selection": "선택취소",
+      "proceeding": "진행중",
+      "win": "당첨",
+      "lose": "미당첨",
+      "enemy": "적특",
+      "cancellation": "취소",
+      "delete": "삭제",
+      "select-all": "전체선택",
+      "won": "원",
+      "are-you-sure-to-delete": "삭제하시겠습니까?",
+      "are-you-sure-to-cancel": "취소하시겠습니까?",
+      "game-time": "경기시간",
+      "event": "종목",
+      "league": "리그",
+      "type": "타입",
+      "home-vs-away": "홈VS원정",
+      "select": "선택",
+      "progress": "진행",
+      "benchmark": "기준점: "
+    }
+  },
+  "sport-list": {
+    "All": "모두",
+    "축구": "축구",
+    "야구": "야구",
+    "농구": "농구",
+    "배구": "배구",
+    "아이스 하키": "아이스 하키",
+    "미식축구": "미식축구",
+    "E게임": "E게임"
+  }
+}

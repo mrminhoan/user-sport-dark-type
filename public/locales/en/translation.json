@@ -1,0 +1,110 @@
+{
+    "header": {
+        "input-search": {
+            "placeholder": "Search for league name or team name...",
+            "btn-search": "Search"
+        },
+        "betting-details": "Betting Details",
+        "user-infor": {
+            "free-match": "Free match",
+            "minimum-bet-amount": "Minimum bet amount",
+            "maximum-bet-amount": "Maximum bet amount",
+            "maximun-win-amount": "Maximum winning amount",
+            "minimum-folder": "Minimum folder",
+            "maximum-folder": "Maximum folder",
+            "maximum-dividend": "Maximum dividend",
+            "betting-cannot-cancel-after": "Betting cannot be canceled after {{amount}} minutes",
+            "cancellation-is-not-possible-before-the-game-starts": "Cancellation is not possible  {{amount}} before the game starts."
+        }
+    },
+    "bet-slip-infor": {
+        "bet-slips": "BetSlips",
+        "amount-held": "Amount held:",
+        "total-odds": "Total odds:",
+        "expected-win-amount": "Expected win amount:",
+        "bet-amount": "Bet amount:",
+        "max": "Max",
+        "place-a-bet": "Place a bet",
+        "empty-bet-slips": "There are no games selected",
+        "bonus-dividend": "Bonus dividend"
+    },
+    "help": "Help",
+    "fixture_zone": {
+        "refresh": "Refresh",
+        "all": "All"
+    },
+    "position": {
+        "1": "Home",
+        "2": "Away",
+        "x": "x",
+        "home": "Home",
+        "away": "Away",
+        "draw": "X",
+        "under": "Under",
+        "over": "Over",
+        "odd": "Odd",
+        "even": "Even",
+        "home-win":"Win",
+        "away-lose":"Lose"
+
+    },
+    "notification": {
+        "warning": "Warning",
+        "pls-select-the-game": "Please select the game",
+        "pls-enter-your-bet-amount": "Please enter your bet amount",
+        "maximum-winnings": "The maximum winning amount is {{amount}}"
+    },
+    "help-modal": {
+        "help": "Help",
+        "close": "Close"
+    },
+    "betting-history": {
+        "a-month-ago": "A month ago",
+        "a-week-ago": "A week ago",
+        "yesterday": "Yesterday",
+        "today": "Today",
+        "column-title": {
+            "combination": "Combination",
+            "betting-time": "Betting time",
+            "betting-amount": "Betting amount",
+            "expected-winning-amount": "Expected winning amount",
+            "winning-dividend": "Winning divident",
+            "bonus-dividend": "Bonus divident",
+            "total-winning-odds": "Total winning odds",
+            "winning-amount": "Winning amount",
+            "betting-result": "Betting result",
+            "processing-time": "Processing time",
+            "action": "Action",
+            "betting-details": "Betting details",
+            "cancel-selection": "Cancel selection",
+            "proceeding": "Proceeding",
+            "win": "Win",
+            "lose": "Lose",
+            "enemy": "Enemy",
+            "cancellation": "Cancellation",
+            "delete": "Delete",
+            "select-all": "Select All",
+            "won": "Won",
+            "are-you-sure-to-delete": "Are you sure you want to delete?",
+            "are-you-sure-to-cancel": "Are you sure you want to cancel?",
+            "game-time": "Game Time",
+            "event": "Event",
+            "league": "League",
+            "type": "Type",
+            "home-vs-away": "Home vs Away",
+            "select": "Select",
+            "progress": "Progress",
+            "benchmark": "Benchmark: "
+        }
+    },
+    "sport-list": {
+        "All": "All",
+        "축구": "Soccer",
+        "야구": "Baseball",
+        "농구": "Basketball",
+        "배구": "Volleyball",
+        "아이스 하키": "Ice Hockey",
+        "미식축구": "Football",
+        "E게임": "E-Game"
+    }
+}
